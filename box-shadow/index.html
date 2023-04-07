@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Generate CSS code for the box-shadow property.">
+        <meta name="keywords" content="CSS, Web development, Code generator">
+        <meta name="author" content="Aron Bencsik">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Box shadow generator - CSS tool</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png"/>
+        <script src="../scripts/box_shadow.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo_link" href="../"><img src="../images/logo.jpg" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="../border-radius/">Border radius</a></li>
+                    <li><a class="current_page_title" href="../box-shadow/">Box shadow</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="gens_wrapper">
+                <section class="wrapper_examples">
+                    <div class="example_bg example_bg__bs">
+                        <div class="example_div example_div__bs"></div>
+                    </div>
+                    
+                </section>
+                <section class="wrapper_selector">
+                    
+                    <div class="selector">
+                        <label for="slider__bs__hl">Horizontal alignment</label><br>
+                        <div>
+                            <input type="range" min="-100" max="100" value="5" class="slider" id="slider__bs__hl">
+                            <input type="number" id="type__bs__hl" class="type" value="5"><label class="label_after" for="type__bs__hl">px</label>
+                        </div>
+                        
+                    </div>
+                    <div class="selector">
+                        <label for="slider__bs__vl">Vertical alignment</label><br>
+                        <div>
+                            <input type="range" min="-100" max="100" value="5" class="slider" id="slider__bs__vl">
+                            <input type="number" id="type__bs__vl" class="type" value="5"><label class="label_after" for="type__bs__vl">px</label>
+                        </div>
+                    </div>
+                    <div class="selector">
+                        <label for="slider__bs__br">Blur radius</label><br>
+                        <div>
+                            <input type="range" min="0" max="100" value="10" class="slider" id="slider__bs__br">
+                            <input type="number" id="type__bs__br" class="type" value="10"><label class="label_after" for="type__bs__br">px</label>
+                        </div>
+                    </div>
+                    <div class="selector">
+                        <label for="slider__bs__sr">Spread radius</label><br>
+                        <div>
+                            <input type="range" min="-100" max="100" value="0" class="slider" id="slider__bs__sr">
+                            <input type="number" id="type__bs__sr" class="type" value="0"><label class="label_after" for="type__bs__sr">px</label>
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <div class="selector">
+                        <label class="label_color" for="colorpicker_shadow">Shadow color:</label>
+                        <input type="color" class="colorpicker" id="colorpicker_shadow" value="#000000">
+                    </div>
+                    <div class="selector">
+                        <label for="slider__bs__so">Shadow opacity</label><br>
+                        <div>
+                            <input type="range" min="0" max="100" value="30" class="slider" id="slider__bs__so">
+                            <input type="number" id="type__bs__so" class="type" name="shadow_opacity" value="30"><label class="label_after" for="type__bs__so">%</label>
+                        </div>
+                    </div>
+                    <div class="selector">
+                        <label class="label_color" for="colorpicker_bg">Background color:</label>
+                        <input type="color" class="colorpicker" id="colorpicker_bg" value="#f0f0f0">
+                    </div>
+                    <div class="selector">
+                        <label class="label_color" for="colorpicker_box">Box color:</label>
+                        <input type="color" class="colorpicker" id="colorpicker_box" value="#2ce382">
+                    </div>
+                    
+                    <hr>
+
+                    <div class="selector">
+                        <label for="which_set__bs">Inset</label>
+                        <label class="switch">
+                            <input type="checkbox" id="which_set__bs" value="inset">
+                            <span class="checkbox_slider"></span>
+                        </label>
+                    </div>
+                    <!--h2 class="title_code_to_copy">Code:</h2-->
+                    <span class="code_to_copy">box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);<br>-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);<br>-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);</span>
+                    <button class="copy_code">Copy code</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <h2>Designed and developed by Aron Bencsik.</h2>
+        </footer>
+          
+    </body>
+</html>

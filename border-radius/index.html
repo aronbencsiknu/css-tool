@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Generate CSS code for the border-radius property.">
+        <meta name="keywords" content="CSS, Web development, Code generator">
+        <meta name="author" content="Aron Bencsik">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Border radius generator - CSS tool</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png"/>
+        <script src="../scripts/border_radius.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo_link" href="../"><img src="../images/logo.jpg" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a class="current_page_title" href="../border-radius/">Border radius</a></li>
+                    <li><a href="../box-shadow/">Box shadow</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="gens_wrapper">
+                <section class="wrapper_examples">
+                    <div class="example_bg example_bg__br">
+                        <div class="example_div example_div__br"></div>
+                    </div>
+                </section>
+                <section class="wrapper_selector">
+                    
+                    <div class="selector selector_all">
+                        <label for="slider__br__all"><b>All corners </b> </label><br>
+                        <div>
+                            <input type="range" min="0" max="200" value="10" class="slider" id="slider__br__all">
+                            <input type="number" id="type__br__all" class="type"  value="10"><label class="label_after" for="type__br__all">px</label>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="selector">
+                        <label for="slider__br__tl">Top left</label><br>
+                        <div>
+                            <input type="range" min="0" max="200" value="10" class="slider not_all" id="slider__br__tl">
+                            <input type="number" id="type__br__tl" class="type"  value="10"><label class="label_after" for="type__br__tl">px</label>
+                        </div>
+                        
+                    </div>
+                    <div class="selector">
+                        <label for="slider__br__tr">Top right</label><br>
+                        <div>
+                            <input type="range" min="0" max="200" value="10" class="slider not_all" id="slider__br__tr">
+                            <input type="number" id="type__br__tr" class="type"  value="10"><label class="label_after" for="type__br__tr">px</label>
+                        </div>
+                        
+                    </div>
+                    <div class="selector">
+                        <label for="slider__br__br">Bottom right</label><br>
+                        <div>
+                            <input type="range" min="0" max="200" value="10" class="slider not_all" id="slider__br__br">
+                            <input type="number" id="type__br__br" class="type"  value="10"><label class="label_after" for="type__br__br">px</label>
+                        </div>
+                        
+                    </div>
+                    <div class="selector">
+                        <label for="slider__br__bl">Bottom left</label><br>
+                        <div>
+                            <input type="range" min="0" max="200" value="10" class="slider not_all" id="slider__br__bl">
+                            <input type="number" id="type__br__bl" class="type"  value="10"><label class="label_after" for="type__br__bl">px</label>
+                        </div>
+                    </div>
+                    <span class="code_to_copy">border-radius: 10px;<br>-moz-border-radius: 10px;<br>-webkit-border-radius: 10px;</span>
+                    <button class="copy_code">Copy code</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <h2>Designed and developed by Aron Bencsik.</h2>
+        </footer>    
+    </body>
+</html>
